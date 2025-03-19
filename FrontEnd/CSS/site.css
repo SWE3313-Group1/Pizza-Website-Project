@@ -1,0 +1,81 @@
+/* Sectioning */
+
+/* General */
+body {
+    background-color: tan;
+}
+
+header {
+    background-color: #6E260E;
+    height: 5em;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: black;
+}
+iframe{
+    height:100%;
+    width:100%;
+    border-color: transparent;
+}
+.nav-bar {
+    box-sizing:border-box;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 70%;
+    align-self: center;
+    top: 50%;
+    -ms-transform: translateY(+25%);
+    transform: translateY(+25%);
+}
+
+.nav-boxes {
+    color: #EF0107;
+    margin-right: .5rem;
+    height: 70%;
+    width: 15%;
+    align-self: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+#logo{
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    top: -1.45rem;
+}
+#header-spacer{
+    width:50%;
+}
+#orderTracking{
+}
+#cart{
+    height:2.5rem;
+    width:2.5rem;
+}
+
+/* End-General */
+
+/* Home Page */
+
+/* End-Home Page */
+
+/* Menu Page */
+/* End-Menu Page */
+
+/* Order Page */
+/* End-Order Page */
+
+/* Cart Page */
+/* End-Cart Page */
+
+/* Login Page */
+/* End-Login Page */
