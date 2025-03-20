@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #6E260E;
+    background-color: #472808;
     height: 5em;
     flex-direction: column;
     flex-wrap: wrap;
@@ -15,13 +15,15 @@ header {
 footer {
     background-color: black;
 }
-iframe{
-    height:100%;
-    width:100%;
+
+iframe {
+    height: 100%;
+    width: 100%;
     border-color: transparent;
 }
+
 .nav-bar {
-    box-sizing:border-box;
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     justify-content: end;
@@ -34,9 +36,8 @@ iframe{
 
 .nav-boxes {
     color: #EF0107;
-    margin-right: .5rem;
     height: 70%;
-    width: 15%;
+    width: 20%;
     align-self: center;
     font-weight: bold;
     text-decoration: none;
@@ -44,7 +45,7 @@ iframe{
     text-align: center;
 }
 
-#logo{
+#logo {
     width: 5rem;
     height: 5rem;
     background-color: transparent;
@@ -52,14 +53,17 @@ iframe{
     position: relative;
     top: -1.45rem;
 }
-#header-spacer{
-    width:50%;
+
+#header-spacer {
+    width: 50%;
 }
-#orderTracking{
+
+#orderTracking {
 }
-#cart{
-    height:2.5rem;
-    width:2.5rem;
+
+#cart {
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 /* End-General */
@@ -78,4 +82,40 @@ iframe{
 /* End-Cart Page */
 
 /* Login Page */
+#loginMenu {
+    display:flex;
+    flex-direction: column;
+    width:20%;
+    height: 25rem;
+    justify-self: center;
+    background-color: #5a4026;
+    padding: 2rem;
+    margin-top: 15rem;
+    box-shadow: 5px 5px 5px;
+    font-weight:bold;
+    h2{
+        text-align: center;
+    }
+    hr{
+        border: 1px solid;
+        width: 100%;
+    }
+}
+.accountButtons {
+    background-color: #EF0107;
+    padding:.35rem;
+    margin-bottom:1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#forgotPasswordLink {
+    margin: 1.5rem 0 1rem 0;
+}
+
 /* End-Login Page */
+/* Element format classifications */
+.inputElement{
+    height: 2rem;
+    width: 20rem;
+}
+/* End-Element format classifications */

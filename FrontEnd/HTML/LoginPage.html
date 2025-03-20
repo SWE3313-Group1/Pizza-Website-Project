@@ -2,17 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
     <link href="../CSS/normalize.css" rel="stylesheet">
     <!--Boilerplate and makes site more consistent between different sites. -->
     <link href="../CSS/site.css" rel="stylesheet"> <!--link to general stylesheet-->
 </head>
 <script src="../jquery-3.7.1.min.js"></script>
 <script>
-    $(function(){
-        $("header").load("Header.html");});
+    $(function () {
+        $("header").load("./Header.html");
+    });
 </script>
-<header> </header> <!--Header that will be on every page-->
-<body>
+<header></header> <!--Header that will be on every page-->
+<body id="LoginPage">
+<div id="loginMenu">
+    <h2>Login</h2>
+    <label>
+        Phone Number<br>
+        <input class="inputElement" id=phone_login" type="text" placeholder="" name="username">
+    </label>
+    <label class="inputElement">
+        Password<br>
+        <input class="inputElement" id="password_login" type="password" placeholder="" name="password">
+    </label>
+    <a href="ForgotPasswordPage.html" id="forgotPasswordLink">Forgot Password</a>
+    <button class="accountButtons" id="loginButton">Login</button>
+    <hr>
+    <button class="accountButtons" id="createAccountButton">Create Account</button>
+</div>
 </body>
 </html>
