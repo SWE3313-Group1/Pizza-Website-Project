@@ -9,10 +9,23 @@
     $(function(){
         $("header").load("Header.html");});
 </script>
+<script>
+    $(function(){
+        $("footer").load("Footer.html");});
+</script>
 <header>
 
 </header>
-<body>
-
+<body class="cartBody">
+<div id="checkoutBox">
+    <p id="subtotal">Sub Total</p>
+    <p id="subtotalValue">??</p>
+    <p id="estimatedTax">Estimated Tax</p>
+    <p id="estimatedTaxValue">??</p>
+    <p id="orderTotal">Order Total</p>
+    <p id="orderTotalValue">??</p>
+<button class="accountButtons" id="checkoutButton">CHECK OUT</button>
+</div>
 </body>
+<footer></footer>
 </html>
