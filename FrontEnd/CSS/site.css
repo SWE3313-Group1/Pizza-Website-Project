@@ -1,6 +1,6 @@
 /* Sectioning */
 
-/* General */
+/* Header */
 body {
     background-color: tan;
 }
@@ -11,17 +11,6 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
 }
-
-footer {
-    background-color: black;
-}
-
-iframe {
-    height: 100%;
-    width: 100%;
-    border-color: transparent;
-}
-
 .nav-bar {
     box-sizing: border-box;
     width: 100%;
@@ -37,15 +26,17 @@ iframe {
 .nav-boxes {
     color: #EF0107;
     height: 70%;
-    width: 20%;
+    width: 30%;
     align-self: center;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.9rem;
     text-align: center;
 }
-
-#logo {
+#logo{
+    margin-left:1rem;
+}
+#logoPicture {
     width: 5rem;
     height: 5rem;
     background-color: transparent;
@@ -61,12 +52,32 @@ iframe {
 #orderTracking {
 }
 
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #2f2d2d;
+    margin-top: 1rem;
+    height: 10rem;
+    width: 100%;
+    bottom: 0;
+}
+.footerSections{
+    margin: 0 7rem 0 7rem;
+    justify-items: center;
+    color: white;
+    a{
+        color:white;
+        text-decoration: none;
+    }
+}
+/* End-Footer */
 #cart {
     height: 2.5rem;
     width: 2.5rem;
 }
 
-/* End-General */
+/* End-Header */
 
 /* Home Page */
 
@@ -109,6 +120,53 @@ iframe {
 /* End-Order Page */
 
 /* Cart Page */
+.cartBody{
+    display:grid;
+#checkoutBox{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    width: 30%;
+    justify-self: right;
+    background-color: #5a4026;
+    font-weight:bold;
+    font-size: 1.2rem;
+    margin: 1rem 1rem 0 0;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px;
+}
+#subtotal{
+    grid-column: 1;
+    grid-row: 1;
+}
+#subtotalValue{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: right;
+}
+#estimatedTax{
+    grid-column: 1;
+    grid-row: 2;
+}
+#estimatedTaxValue{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: right;
+}
+#orderTotal{
+    grid-column: 1;
+    grid-row: 3;
+}
+#orderTotalValue{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: right;
+}
+#checkoutButton{
+    grid-column: 1/2;
+    grid-row: 4;
+    width:100%;
+}
+    }
 /* End-Cart Page */
 
 /* Login Page */
@@ -122,6 +180,7 @@ iframe {
     background-color: #5a4026;
     padding: 2rem;
     margin-top: 15rem;
+    margin-bottom: 5rem;
     box-shadow: 5px 5px 5px;
     font-weight:bold;
     h2{
@@ -146,8 +205,8 @@ iframe {
 /* End-Login Page */
 /* Element format classifications */
 .inputElement{
-    height: 2rem;
-    width: 20rem;
+    height: 65%;
+    width: 100%;
 }
 
 /* End-Element format classifications */
