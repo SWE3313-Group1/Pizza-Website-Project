@@ -6,26 +6,34 @@
 </head>
 <script src="../jquery-3.7.1.min.js"></script>
 <script>
-    $(function(){
-        $("header").load("Header.html");});
+    $(function () {
+        $("header").load("Header.html");
+    });
 </script>
 <script>
-    $(function(){
-        $("footer").load("Footer.html");});
+    $(function () {
+        $("footer").load("Footer.html");
+    });
 </script>
 <header>
 
 </header>
-<body class="cartBody">
-<div id="checkoutBox">
-    <p id="subtotal">Sub Total</p>
-    <p id="subtotalValue">??</p>
-    <p id="estimatedTax">Estimated Tax</p>
-    <p id="estimatedTaxValue">??</p>
-    <p id="orderTotal">Order Total</p>
-    <p id="orderTotalValue">??</p>
-<button class="accountButtons" id="checkoutButton">CHECK OUT</button>
-</div>
+<body id="cartBody">
+<section id="cartSections">
+    <div id="orderBox">
+        <h2>Your Order</h2>
+
+    </div>
+    <div id="checkoutBox">
+        <p id="subtotal">Sub Total</p>
+        <p id="subtotalValue">??</p>
+        <p id="estimatedTax">Estimated Tax</p>
+        <p id="estimatedTaxValue">??</p>
+        <p id="orderTotal">Order Total</p>
+        <p id="orderTotalValue">??</p>
+        <button class="accountButtons" id="checkoutButton">CHECK OUT</button>
+    </div>
+</section>
 </body>
 <footer></footer>
 </html>
