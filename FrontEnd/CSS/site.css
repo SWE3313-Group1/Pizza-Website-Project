@@ -217,11 +217,15 @@ footer {
     #orderBox{
         grid-column: 1;
         margin-left: 2rem;
+        margin-top: 1rem;
+        padding: 1.5rem;
+        box-shadow: 5px 5px 5px;
+        background-color: #5a4026;
         h2{
             font-size: 2rem;
-            border: 2px solid black;
             justify-self: center;
         }
+        margin-bottom:50rem;
     }
     #checkoutBox {
         grid-column: 2;
@@ -234,6 +238,7 @@ footer {
         margin: 1rem 1rem 0 0;
         padding: 1rem;
         box-shadow: 5px 5px 5px;
+        margin-bottom: 50rem;
     }
 
     #subtotal {
