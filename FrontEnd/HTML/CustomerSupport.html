@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Support</title>
+    <link href="../CSS/normalize.css" rel="stylesheet">
+    <link href="../CSS/site.css" rel="stylesheet">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <style>
+    #supportScreen {
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .inputElement {
+      width: 60%;
+      max-width: 400px;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      display: block;
+    }
+    textarea.inputElement {
+      resize: vertical;
+    }
+  </style>
+    <script>
+    $(function () {
+      $("header").load("Header.html");
+    });
+    $(function () {
+      $("footer").load("Footer.html");
+    });
+  </script>
+</head>
+<header></header>
+<body>
+<div id="supportScreen">
+    <h2>Customer Support</h2>
+
+    <div class="section">
+        <h3>Live Chat</h3>
+        <p>Click below to talk to a support agent:</p>
+        <button class="accountButtons">Start Chat</button>
+    </div>
+
+    <div class="section">
+        <h3>Email Support</h3>
+        <form>
+            <label for="email">Email</label>
+            <input class="inputElement" type="email" id="email" name="email" placeholder="yourname@example.com">
+
+            <label for="message">Message</label>
+            <textarea class="inputElement" id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+
+            <button class="accountButtons" type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="section">
+        <h3>Frequently Asked Questions</h3>
+        <ul>
+            <li>How do I reset my password?</li>
+            <li>Where can I find my previous orders?</li>
+            <li>What are your delivery hours?</li>
+            <li>Can I change my order after placing it?</li>
+        </ul>
+    </div>
+</div>
+</body>
+<footer></footer>
+</html>
