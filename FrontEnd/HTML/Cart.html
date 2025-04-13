@@ -2,38 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="Site.css"> </head>
 <script src="../jquery-3.7.1.min.js"></script>
 <script>
-    $(function () {
-        $("header").load("Header.html");
-    });
+    $(function () { $("header").load("Header.html"); });
+    $(function () { $("footer").load("Footer.html"); });
 </script>
-<script>
-    $(function () {
-        $("footer").load("Footer.html");
-    });
-</script>
-<header>
+<script src="cart.js" defer></script>
 
-</header>
-<body id="cartBody">
+<header></header>
+
+<body>
 <section id="cartSections">
+
     <div class="orderBox">
         <h2>Your Order</h2>
         <hr>
+        <div id="orderBoxItems">
+            <p id="emptyCartMessage" style="display: none;">Your cart is empty.</p>
+        </div>
     </div>
+
     <div id="checkoutBox">
-        <p id="subtotal">Sub Total</p>
-        <p id="subtotalValue">??</p>
-        <p id="estimatedTax">Estimated Tax</p>
-        <p id="estimatedTaxValue">??</p>
-        <p id="orderTotal">Order Total</p>
-        <p id="orderTotalValue">??</p>
-        <button class="accountButtons" id="checkoutButton">CHECK OUT</button>
+        <span id="subtotal">Subtotal:</span>
+        <span id="subtotalValue">$0.00</span>
+
+        <span id="estimatedTax">Estimated Tax (7%):</span>
+        <span id="estimatedTaxValue">$0.00</span>
+
+        <span id="orderTotal">Order Total:</span>
+        <span id="orderTotalValue">$0.00</span>
+
+        <a href="OrderScreen.html" id="checkoutButtonLink" class="accountButtons" style="grid-column: 1 / span 2; margin-top: 1rem;">Proceed to Checkout</a>
     </div>
+
 </section>
 </body>
+
 <footer></footer>
 </html>

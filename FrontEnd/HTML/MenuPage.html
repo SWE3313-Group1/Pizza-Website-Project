@@ -3,139 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
+    <link rel="stylesheet" href="../CSS/site.css">
 </head>
 <script src="../jquery-3.7.1.min.js"></script>
-<script>
-    $(function () {
-        $("header").load("Header.html");
-    });
-</script>
-<script>
-    $(function () {
-        $("footer").load("Footer.html");
-    });
-</script>
+<script src="customization.js" defer></script>
+
 <header></header>
+
 <body id="menuBody">
+
 <h2>Most Popular</h2>
 <section class="menuSection">
-    <!--Grid w/ top row being "create your own" and the rest best specialties-->
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Create_Your_Own.jpg">
+        <img class="menuItemImage" src="../Images/Create_Your_Own.jpg" alt="Create Your Own Pizza">
         <p class="menuLabel">Create Your Own</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Create Your Own" data-item-type="pizza">Add to
+            Order
+        </button>
     </div>
 </section>
 <hr>
+
 <h2>Specialty Pizzas</h2>
 <section class="menuSection">
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/PeppChiveMozz.jpg">
+        <img class="menuItemImage" src="../Images/PeppChiveMozz.jpg" alt="CheesyRon Pizza">
         <p class="menuLabel">CheesyRon</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="CheesyRon" data-item-type="pizza">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/DoubleOlive.jpg">
+        <img class="menuItemImage" src="../Images/DoubleOlive.jpg" alt="Double Olive Pizza">
         <p class="menuLabel">Double Olive</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Double Olive" data-item-type="pizza">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/TomatoSpinach.jpg">
+        <img class="menuItemImage" src="../Images/TomatoSpinach.jpg" alt="Garden Pizza">
         <p class="menuLabel">Garden</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Garden" data-item-type="pizza">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Deluxe.jpg">
+        <img class="menuItemImage" src="../Images/Deluxe.jpg" alt="Deluxe Pizza">
         <p class="menuLabel">Deluxe</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Deluxe" data-item-type="pizza">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Hawaiin.jpg">
+        <img class="menuItemImage" src="../Images/Hawaiin.jpg" alt="Hawaiian Pizza">
         <p class="menuLabel">Hawaiian</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Hawaiian" data-item-type="pizza">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/MeatLovers.jpg">
+        <img class="menuItemImage" src="../Images/MeatLovers.jpg" alt="Meat Lovers Pizza">
         <p class="menuLabel">Meat Lovers</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Meat Lovers" data-item-type="pizza">Add to Order
+        </button>
     </div>
 </section>
 <section class="menuSection" id="Calzones">
-
 </section>
 <hr>
+
 <h2>Subs</h2>
 <section class="menuSection" id="Subs">
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/ItalianSub.jpeg">
+        <img class="menuItemImage" src="../Images/ItalianSub.jpeg" alt="Italian Sub">
         <p class="menuLabel">Italian</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Italian" data-item-type="sub">Add to Order</button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/VeggieSub.png">
+        <img class="menuItemImage" src="../Images/VeggieSub.png" alt="Veggie Sub">
         <p class="menuLabel">Veggie</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Veggie" data-item-type="sub">Add to Order</button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/MeatballSub.jpeg">
+        <img class="menuItemImage" src="../Images/MeatballSub.jpeg" alt="Meatball Sub">
         <p class="menuLabel">Meatball</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Meatball" data-item-type="sub">Add to Order
+        </button>
     </div>
 </section>
 <section class="menuSection" id="Salads">
-
 </section>
 <section class="menuSection" id="Sides">
-
 </section>
 <hr>
+
 <h2>Desserts</h2>
 <section class="menuSection" id="Desserts">
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Brownies.jpeg">
+        <img class="menuItemImage" src="../Images/Brownies.jpeg" alt="Brownies">
         <p class="menuLabel">Brownies</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Brownies" data-item-type="dessert">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/CinnamonBites.jpeg">
+        <img class="menuItemImage" src="../Images/CinnamonBites.jpeg" alt="Cinnamon Bites">
         <p class="menuLabel">Cinnamon Bites</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Cinnamon Bites" data-item-type="dessert">Add to
+            Order
+        </button>
     </div>
 </section>
 <hr>
+
 <h2>Beverages</h2>
 <section class="menuSection">
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Coke.jpeg">
+        <img class="menuItemImage" src="../Images/Coke.jpeg" alt="Coke">
         <p class="menuLabel">Coke</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Coke" data-item-type="beverage">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Pepsi.jpeg">
+        <img class="menuItemImage" src="../Images/Pepsi.jpeg" alt="Pepsi">
         <p class="menuLabel">Pepsi</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Pepsi" data-item-type="beverage">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Sprite.jpeg">
+        <img class="menuItemImage" src="../Images/Sprite.jpeg" alt="Sprite">
         <p class="menuLabel">Sprite</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Sprite" data-item-type="beverage">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Lemonade.jpeg">
+        <img class="menuItemImage" src="../Images/Lemonade.jpeg" alt="Lemonade">
         <p class="menuLabel">Lemonade</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Lemonade" data-item-type="beverage">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Fanta.jpeg">
+        <img class="menuItemImage" src="../Images/Fanta.jpeg" alt="Fanta">
         <p class="menuLabel">Fanta</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Fanta" data-item-type="beverage">Add to Order
+        </button>
     </div>
     <div class="menuItem">
-        <img class="menuItemImage" src="../Images/Water.jpeg">
+        <img class="menuItemImage" src="../Images/Water.jpeg" alt="Water">
         <p class="menuLabel">Water</p>
-        <button class="accountButtons">Add to Order</button>
+        <button class="accountButtons addToOrderBtn" data-item-name="Water" data-item-type="beverage">Add to Order
+        </button>
     </div>
 </section>
+
+<div id="customizationModalOverlay" style="display: none;">
+    <div id="customizationModal">
+        <h3 id="modalItemName">Customize Item</h3>
+        <hr>
+        <div id="modalOptions">
+            <div class="modalOptionGroup">
+                <label for="itemQuantity">Quantity:</label>
+                <input type="number" id="itemQuantity" name="quantity" value="1" min="1" max="10" class="inputElement">
+            </div>
+
+            <div class="modalOptionGroup" id="sizeOptions" style="display: none;">
+                <label>Size:</label><br>
+                <input type="radio" id="sizeSmall" name="itemSize" value="Small">
+                <label for="sizeSmall">Small</label><br>
+                <input type="radio" id="sizeMedium" name="itemSize" value="Medium" checked>
+                <label for="sizeMedium">Medium</label><br>
+                <input type="radio" id="sizeLarge" name="itemSize" value="Large">
+                <label for="sizeLarge">Large</label><br>
+            </div>
+
+            <div class="modalOptionGroup" id="crustOptions" style="display: none;">
+                <label>Crust:</label><br>
+                <input type="radio" id="crustThin" name="itemCrust" value="Thin">
+                <label for="crustThin">Thin</label><br>
+                <input type="radio" id="crustRegular" name="itemCrust" value="Regular" checked>
+                <label for="crustRegular">Regular</label><br>
+                <input type="radio" id="crustThick" name="itemCrust" value="Thick">
+                <label for="crustThick">Thick</label><br>
+                <input type="radio" id="crustStuffed" name="itemCrust" value="Stuffed">
+                <label for="crustStuffed">Stuffed</label><br>
+            </div>
+
+            <div class="modalOptionGroup" id="toppingOptions" style="display: none;">
+                <label>Toppings:</label><br>
+                <input type="checkbox" id="toppingPepperoni" name="itemTopping" value="Pepperoni"><label
+                    for="toppingPepperoni">Pepperoni</label><br>
+                <input type="checkbox" id="toppingMushrooms" name="itemTopping" value="Mushrooms"><label
+                    for="toppingMushrooms">Mushrooms</label><br>
+                <input type="checkbox" id="toppingOnions" name="itemTopping" value="Onions"><label for="toppingOnions">Onions</label><br>
+                <input type="checkbox" id="toppingBacon" name="itemTopping" value="Bacon"><label for="toppingBacon">Bacon</label><br>
+                <input type="checkbox" id="toppingSpinach" name="itemTopping" value="Spinach"><label
+                    for="toppingSpinach">Spinach</label><br>
+                <input type="checkbox" id="toppingTomato" name="itemTopping" value="Tomato"><label for="toppingTomato">Tomato</label><br>
+                <input type="checkbox" id="toppingBlackOlives" name="itemTopping" value="Black Olives"><label
+                    for="toppingBlackOlives">Black Olives</label><br>
+                <input type="checkbox" id="toppingPeppers" name="itemTopping" value="Peppers"><label
+                    for="toppingPeppers">Peppers</label><br>
+                <input type="checkbox" id="toppingPineapple" name="itemTopping" value="Pineapple"><label
+                    for="toppingPineapple">Pineapple</label><br>
+                <input type="checkbox" id="toppingHam" name="itemTopping" value="Ham"><label
+                    for="toppingHam">Ham</label><br>
+                <input type="checkbox" id="toppingMozzarella" name="itemTopping" value="Mozzarella"><label
+                    for="toppingMozzarella">Extra Mozzarella</label><br>
+            </div>
+
+            <div class="modalOptionGroup" id="subOptions" style="display: none;">
+                <label>Sub Additions:</label><br>
+                <input type="checkbox" id="subExtraCheese" name="subOption" value="Extra Cheese"><label
+                    for="subExtraCheese">Extra Cheese</label><br>
+                <input type="checkbox" id="subToasted" name="subOption" value="Toasted"><label
+                    for="subToasted">Toasted</label><br>
+            </div>
+
+            <div class="modalOptionGroup">
+                <label for="specialInstructions">Special Instructions:</label>
+                <textarea id="specialInstructions" name="instructions" rows="3" class="inputElement"></textarea>
+            </div>
+        </div>
+        <hr>
+        <div id="modalActions">
+            <button class="accountButtons" id="modalAddToCartBtn">Add to Order</button>
+            <button class="accountButtons" id="modalCancelBtn" style="background-color: #6c757d;">Cancel</button>
+        </div>
+    </div>
+</div>
 </body>
 <footer></footer>
 </html>

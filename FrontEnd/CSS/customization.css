@@ -1,0 +1,93 @@
+/* --- Additions for Customization Modal --- */
+
+#customizationModalOverlay {
+    position: fixed;
+    display: none; /* Hidden by default */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    /* Flex properties for when it *is* displayed */
+    align-items: center;
+    justify-content: center;
+}
+
+#customizationModal {
+    background-color: #fefefe; /* White background for the modal */
+    margin: auto; /* Helps center, used with flex above */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+    max-width: 500px; /* Max width */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: default; /* Reset cursor for modal content */
+    border-radius: 8px;
+    /* Use a theme color if preferred */
+    /* background-color: #5a4026; */
+    /* color: white; */
+}
+
+#customizationModal h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #472808; /* Match header color */
+}
+
+#customizationModal hr {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#modalOptions {
+    margin-bottom: 15px;
+}
+
+.modalOptionGroup {
+    margin-bottom: 15px; /* Space between option groups */
+}
+
+.modalOptionGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block; /* Ensure margin works */
+}
+.modalOptionGroup input[type="radio"],
+.modalOptionGroup input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.modalOptionGroup label[for*="size"],
+.modalOptionGroup label[for*="topping"],
+.modalOptionGroup label[for*="sub"] {
+    font-weight: normal; /* Normal weight for radio/checkbox labels */
+}
+
+/* Ensure modal inputs use the general input style if desired */
+#customizationModal .inputElement {
+    height: 2rem;
+    width: 95%; /* Adjust width within modal */
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#customizationModal textarea.inputElement {
+    height: auto; /* Allow textarea to resize */
+}
+
+
+#modalActions {
+    text-align: right; /* Align buttons to the right */
+}
+
+#modalActions .accountButtons {
+    margin-left: 10px; /* Space between buttons */
+    padding: 0.5rem 1rem; /* Adjust padding for modal buttons */
+    font-size: 1rem; /* Slightly smaller font in modal? */
+}
+
+
+/* --- End Additions --- */

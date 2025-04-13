@@ -104,15 +104,18 @@ footer {
         justify-content: space-between;
         column-gap: 1rem;
     }
-    h2{
+
+    h2 {
         margin-left: 3rem;
         font-size: 2rem;
         margin: 1rem 1rem 1rem 3rem;
     }
-    p{
+
+    p {
         font-size: 1.35rem;
         font-weight: bold;
     }
+
     .menuItem {
         width: 100%;
         justify-content: center;
@@ -132,18 +135,17 @@ footer {
         height: 2rem;
         margin: 0;
     }
-<<<<<<< HEAD
-=======
 
-    #Pepperoni {
-    }
+< < < < < < < HEAD = = = = = = = #Pepperoni {
+}
 
     #Sausage {
     }
 
     #Bacon {
     }
->>>>>>> 30b6253 (Added stuff for menu, updated cart, refined order screen.)
+
+>>> >>> > 30 b6253 (Added stuff for menu, updated cart, refined order screen .)
 }
 
 /* End-Menu Page */
@@ -211,75 +213,79 @@ footer {
 
 /* Cart Page */
 
-#cartSections{
-    display:grid;
+#cartSections {
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
-    .orderBox{
-        grid-column: 1;
-        margin-left: 2rem;
-        margin-top: 1rem;
-        padding: 1.5rem;
-        box-shadow: 5px 5px 5px;
-        background-color: #5a4026;
-        h2{
-            font-size: 2rem;
-            justify-self: center;
-        }
-        margin-bottom:50rem;
-    }
-    #checkoutBox {
-        grid-column: 2;
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        justify-self: right;
-        background-color: #5a4026;
-        font-weight: bold;
-        font-size: 1.2rem;
-        margin: 1rem 1rem 0 0;
-        padding: 1rem;
-        box-shadow: 5px 5px 5px;
-        margin-bottom: 50rem;
+
+.orderBox {
+    grid-column: 1;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    box-shadow: 5px 5px 5px;
+    background-color: #5a4026;
+
+    h2 {
+        font-size: 2rem;
+        justify-self: center;
     }
 
-    #subtotal {
-        grid-column: 1;
-        grid-row: 1;
-    }
+    margin-bottom: 50rem;
+}
 
-    #subtotalValue {
-        grid-column: 2;
-        grid-row: 1;
-        justify-self: right;
-    }
+#checkoutBox {
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-self: right;
+    background-color: #5a4026;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1rem 1rem 0 0;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px;
+    margin-bottom: 50rem;
+}
 
-    #estimatedTax {
-        grid-column: 1;
-        grid-row: 2;
-    }
+#subtotal {
+    grid-column: 1;
+    grid-row: 1;
+}
 
-    #estimatedTaxValue {
-        grid-column: 2;
-        grid-row: 2;
-        justify-self: right;
-    }
+#subtotalValue {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: right;
+}
 
-    #orderTotal {
-        grid-column: 1;
-        grid-row: 3;
-    }
+#estimatedTax {
+    grid-column: 1;
+    grid-row: 2;
+}
 
-    #orderTotalValue {
-        grid-column: 2;
-        grid-row: 3;
-        justify-self: right;
-    }
+#estimatedTaxValue {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: right;
+}
 
-    #checkoutButton {
-        grid-column: 1/2;
-        grid-row: 4;
-        width: 100%;
-    }
+#orderTotal {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#orderTotalValue {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: right;
+}
+
+#checkoutButton {
+    grid-column: 1/2;
+    grid-row: 4;
+    width: 100%;
+}
 
 
 /* End-Cart Page */
@@ -332,7 +338,8 @@ footer {
     height: 2rem;
     width: 100%;
 }
-#createAccountMenu{
+
+#createAccountMenu {
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -354,16 +361,17 @@ footer {
         width: 100%;
     }
 }
+
 /*Customer Record Start */
-#customerRecord {
+#orderHistory {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    height: 30rem;
-    justify-self: center;
+    width: 60%;
+    height: 40rem;
     background-color: #5a4026;
     padding: 2rem;
-    margin-top: 15rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
     margin-bottom: 28rem;
     box-shadow: 5px 5px 5px;
     font-weight: bold;
@@ -376,9 +384,122 @@ footer {
         border: 1px solid;
         width: 100%;
     }
+
+    label {
+        text-align: left;
+        float: left;
+    }
+
+    .updateInfoButton {
+        width: 10%;
+        background-color: #EF0107;
+        padding: .35rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+    }
+    #updatePasswordButton {
+
+    }
 }
-/*Customer Record End */
 
-/* Element format classifications */
+/* --- Additions for Customization Modal --- */
 
-/* End-Element format classifications */
+#customizationModalOverlay {
+    position: fixed; /* Stay in place */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+    z-index: 1000; /* Make sure it's on top */
+    cursor: pointer; /* Indicate clicking overlay closes modal */
+    /* Center the modal content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#customizationModal {
+    background-color: #fefefe; /* White background for the modal */
+    margin: auto; /* Helps center, used with flex above */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+    max-width: 500px; /* Max width */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: default; /* Reset cursor for modal content */
+    border-radius: 8px;
+    /* Use a theme color if preferred */
+    /* background-color: #5a4026; */
+    /* color: white; */
+}
+
+#customizationModal h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #472808; /* Match header color */
+}
+
+#customizationModal hr {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#modalOptions {
+    margin-bottom: 15px;
+}
+
+.modalOptionGroup {
+    margin-bottom: 15px; /* Space between option groups */
+}
+
+.modalOptionGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block; /* Ensure margin works */
+}
+.modalOptionGroup input[type="radio"],
+.modalOptionGroup input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.modalOptionGroup label[for*="size"],
+.modalOptionGroup label[for*="topping"],
+.modalOptionGroup label[for*="sub"] {
+    font-weight: normal; /* Normal weight for radio/checkbox labels */
+}
+
+/* Ensure modal inputs use the general input style if desired */
+#customizationModal .inputElement {
+    height: 2rem;
+    width: 95%; /* Adjust width within modal */
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#customizationModal textarea.inputElement {
+    height: auto; /* Allow textarea to resize */
+}
+
+
+#modalActions {
+    text-align: right; /* Align buttons to the right */
+}
+
+#modalActions .accountButtons {
+    margin-left: 10px; /* Space between buttons */
+    padding: 0.5rem 1rem; /* Adjust padding for modal buttons */
+    font-size: 1rem; /* Slightly smaller font in modal? */
+}
+
+
+/* --- End Additions --- */
