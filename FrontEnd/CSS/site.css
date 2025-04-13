@@ -159,6 +159,7 @@ footer {
     width: 50%;
     background-color: #5a4026;
     padding: 2rem 4rem 4rem 2rem;
+    margin-bottom: 35rem;
 
 
     .orderButtons {
@@ -209,12 +210,12 @@ footer {
 /* End-Order Page */
 
 /* Cart Page */
-#cartBody {
+
 #cartSections{
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
-    #orderBox{
+    .orderBox{
         grid-column: 1;
         margin-left: 2rem;
         margin-top: 1rem;
@@ -279,7 +280,7 @@ footer {
         grid-row: 4;
         width: 100%;
     }
-}
+
 
 /* End-Cart Page */
 
@@ -294,7 +295,7 @@ footer {
     background-color: #5a4026;
     padding: 2rem;
     margin-top: 15rem;
-    margin-bottom: 5rem;
+    margin-bottom: 28rem;
     box-shadow: 5px 5px 5px;
     font-weight: bold;
 
@@ -314,6 +315,9 @@ footer {
     margin-bottom: 1rem;
     font-weight: bold;
     font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    text-decoration: none;
 }
 
 #forgotPasswordLink {
@@ -321,10 +325,60 @@ footer {
 }
 
 /* End-Login Page */
-/* Element format classifications */
+/*Create Account Page */
+
+/*End Create Account Page*/
 .inputElement {
     height: 2rem;
     width: 100%;
 }
+#createAccountMenu{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 30rem;
+    justify-self: center;
+    background-color: #5a4026;
+    padding: 2rem;
+    margin-top: 15rem;
+    margin-bottom: 28rem;
+    box-shadow: 5px 5px 5px;
+    font-weight: bold;
+
+    h2 {
+        text-align: center;
+    }
+
+    hr {
+        border: 1px solid;
+        width: 100%;
+    }
+}
+/*Customer Record Start */
+#customerRecord {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 30rem;
+    justify-self: center;
+    background-color: #5a4026;
+    padding: 2rem;
+    margin-top: 15rem;
+    margin-bottom: 28rem;
+    box-shadow: 5px 5px 5px;
+    font-weight: bold;
+
+    h2 {
+        text-align: center;
+    }
+
+    hr {
+        border: 1px solid;
+        width: 100%;
+    }
+}
+/*Customer Record End */
+
+/* Element format classifications */
 
 /* End-Element format classifications */

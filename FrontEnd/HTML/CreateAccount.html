@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link href="../CSS/normalize.css" rel="stylesheet">
+    <!--Boilerplate and makes site more consistent between different sites. -->
+    <link href="../CSS/site.css" rel="stylesheet"> <!--link to general stylesheet-->
+</head>
+<script src="../jquery-3.7.1.min.js"></script>
+<script>
+    $(function () {
+        $("header").load("./Header.html");
+    });
+</script>
+<script>
+    $(function(){
+        $("footer").load("Footer.html");});
+</script>
+<header></header> <!--Header that will be on every page-->
+<body >
+<div id="createAccountMenu">
+    <h2>Create New Account</h2>
+    <hr>
+    <label>
+    First Name<br>
+    <input class="inputElement" type="text" placeholder="" name="fName">
+</label>
+    <label>
+        Last Name<br>
+        <input class="inputElement" type="text" placeholder="" name="lName">
+    </label>
+    <label>
+        Phone Number<br>
+        <input class="inputElement" type="text" placeholder="" name="username">
+    </label>
+
+    <label>
+        Password<br>
+        <input class="inputElement" type="password" placeholder="" name="password">
+    </label>
+    <label>
+        Confirm Password<br>
+        <input class="inputElement" type="password" placeholder="" name="confirmPassword">
+    </label>
+    <hr>
+    <button class="accountButtons" id="finalizeAccountButton">Create Account</button>
+
+</div>
+</body>
+<footer></footer>
+</html>

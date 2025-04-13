@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer Support</title>
-    <link href="../CSS/normalize.css" rel="stylesheet">
-    <link href="../CSS/site.css" rel="stylesheet">
-    <script src="../jquery-3.7.1.min.js"></script>
-    <style>
+    <title>Menu</title>
+</head>
+<script src="../jquery-3.7.1.min.js"></script>
+<script>
+    $(function () {
+        $("header").load("Header.html");
+    });
+</script>
+<script>
+    $(function () {
+        $("footer").load("Footer.html");
+    });
+</script>
+<header></header>
+<style>
     #supportScreen {
       padding: 0 20px;
+
     }
     .section {
       margin-bottom: 30px;
@@ -25,16 +36,6 @@
       resize: vertical;
     }
   </style>
-    <script>
-    $(function () {
-      $("header").load("Header.html");
-    });
-    $(function () {
-      $("footer").load("Footer.html");
-    });
-  </script>
-</head>
-<header></header>
 <body>
 <div id="supportScreen">
     <h2>Customer Support</h2>
