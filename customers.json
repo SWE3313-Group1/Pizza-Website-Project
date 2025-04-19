@@ -1,0 +1,50 @@
+{
+    "124-456-7890": {
+        "chargeAccountType": "visa",
+        "address": "lnae oka",
+        "phone": "124-456-7890",
+        "name": "Kayla woods"
+    },
+    "55565": {
+        "chargeAccountType": "visa",
+        "address": "78 your mom",
+        "phone": "55565",
+        "name": "Ryan Woods"
+    },
+    "90": {
+        "chargeAccountType": "visa",
+        "address": "00 liame Dr",
+        "phone": "90",
+        "name": "ry an"
+    },
+    "5551111": {
+        "chargeAccountType": "Visa",
+        "address": "101 Elm St",
+        "phone": "5551111",
+        "name": "Ryan Woods"
+    },
+    "1112222": {
+        "chargeAccountType": "Visa",
+        "address": "22 Somewhere Rd",
+        "phone": "1112222",
+        "name": "Joe Nama"
+    },
+    "345-678-9023": {
+        "chargeAccountType": "Mastercard",
+        "address": "105 Elm St",
+        "phone": "345-678-9023",
+        "name": "Ryan Woods"
+    },
+    "123-456-7890": {
+        "chargeAccountType": "MasterCard",
+        "address": "huckleberry fin drive 101",
+        "phone": "123-456-7890",
+        "name": "Ryan Woods"
+    },
+    "456890192": {
+        "chargeAccountType": "Visa",
+        "address": "93 Tumbldein Ln",
+        "phone": "456890192",
+        "name": "Anthony Woods"
+    }
+}
