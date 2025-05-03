@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PizzaOrderPage
+namespace Menu
 {
     internal static class Program
     {
@@ -16,7 +13,13 @@ namespace PizzaOrderPage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pizzaorder());
+
+            // Ensure proper disposal of resources
+            using (var menuWindow = new MenuWindow())
+            {
+                Application.Run(menuWindow);
+            }
         }
     }
 }
+
