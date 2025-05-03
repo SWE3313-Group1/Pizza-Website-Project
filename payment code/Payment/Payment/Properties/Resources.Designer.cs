@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Payment.Properties
+namespace TestPayment.Properties
 {
 
 

@@ -15,15 +15,19 @@ namespace Payment
         public PaymentMenu()
         {
             InitializeComponent();
+            this.Load += new EventHandler(PaymentMenu_Load);
         }
 
         private void PaymentMenu_Load(object sender, EventArgs e)
         {
             // This should get order information from the Order Menu GUI to place in the ListBox
+            // Additionally, the total cost should be displayed
+            // [REQUIRES DEPENDENCIES]
         }
 
         private void BILLING_EQUALS_SHIPPING_CheckedChanged(object sender, EventArgs e)
         {
+            // Hide all of billing information fields if checked
             billingNameLabel.Visible = !BILLING_EQUALS_SHIPPING.Checked;
             BILLING_NAME.Visible = !BILLING_EQUALS_SHIPPING.Checked;
 
@@ -51,12 +55,13 @@ namespace Payment
 
         private void GoBackButton_Click(object sender, EventArgs e)
         {
-            // This should go back to the Order Menu GUI
+            // This should go back to the Order Menu GUI [REQUIRES DEPENDENCIES]
         }
 
         private void AccountAutoFill_Click(object sender, EventArgs e)
         {
             // Use the json file to autofill payment details based off of account
+            // [REQUIRES DEPENDENCIES]
 
             // ----[PLACEHOLDER CODE]----
             FULL_NAME.Text = "placeholder";
@@ -86,6 +91,7 @@ namespace Payment
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
+            // Check if all REQUIRED fields are filled in
             if (!String.IsNullOrEmpty(FULL_NAME.Text)
                 && !String.IsNullOrEmpty(ADDRESS_ONE.Text)
                 && !String.IsNullOrEmpty(CITY.Text)
@@ -104,11 +110,41 @@ namespace Payment
                 && !String.IsNullOrEmpty(CVV.Text)
                 )
             {
-                // Save the payment information to the customer account
+                // Create a new instance of PaymentDetails
+                PaymentDetails details = new PaymentDetails()
+                {
+                    fullName = FULL_NAME.Text,
+                    addressOne = ADDRESS_ONE.Text,
+                    addressTwo = ADDRESS_TWO.Text,
+                    city = CITY.Text,
+                    state = STATE.Text,
+                    postalCode = POSTAL_CODE.Text,
+                    country = CITY.Text,
+                    phoneNumber = PHONE_NUMBER.Text,
+
+                    // Use a tenary operator for the billing address information
+                    // If BILLING_EQUALS_SHIPPING is checked, use shipping address information instead
+                    billingFullName = (!BILLING_EQUALS_SHIPPING.Checked) ? BILLING_NAME.Text : FULL_NAME.Text,
+                    billingAddressOne = (!BILLING_EQUALS_SHIPPING.Checked) ? BILLING_ADDRESS_ONE.Text : ADDRESS_ONE.Text,
+                    billingAddressTwo = (!BILLING_EQUALS_SHIPPING.Checked) ? BILLING_ADDRESS_TWO.Text : ADDRESS_TWO.Text,
+                    billingCity = (!BILLING_EQUALS_SHIPPING.Checked) ? BILLING_CITY.Text : CITY.Text,
+                    billingState = (!BILLING_EQUALS_SHIPPING.Checked) ? BILLING_STATE.Text : STATE.Text,
+                    billingPostalCode = (!BILLING_EQUALS_SHIPPING.Checked) ? BILLING_POSTAL.Text : POSTAL_CODE.Text,
+                    billingCountry = (!BILLING_EQUALS_SHIPPING.Checked) ? BILLING_COUNTRY.Text : COUNTRY.Text,
+                    billingPhoneNumber = (!BILLING_EQUALS_SHIPPING.Checked) ? BILLING_PHONE.Text : PHONE_NUMBER.Text,
+
+                    cardNumber = CARD_NUMBER.Text,
+                    nameOnCard = NAME_ON_CARD.Text,
+                    expirationDate = EXPIRATION_DATE.Text,
+                    cardVerificationValue = CVV.Text
+                };
+
                 // Send the customer to the billing page
+                // [REQUIRES DEPENDENCIES]
             }
             else
             {
+                // Show error message if any of the REQUIRED fields are not filled out
                 PaymentDetailsError paymentDetailsError = new PaymentDetailsError();
                 paymentDetailsError.Show();
             }
