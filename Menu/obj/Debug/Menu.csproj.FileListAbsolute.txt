@@ -1,0 +1,10 @@
+C:\Users\pepat\source\repos\Menu\bin\Debug\Menu.exe.config
+C:\Users\pepat\source\repos\Menu\bin\Debug\Menu.exe
+C:\Users\pepat\source\repos\Menu\bin\Debug\Menu.pdb
+C:\Users\pepat\source\repos\Menu\obj\Debug\Menu.csproj.AssemblyReference.cache
+C:\Users\pepat\source\repos\Menu\obj\Debug\Menu.MenuWindow.resources
+C:\Users\pepat\source\repos\Menu\obj\Debug\Menu.Properties.Resources.resources
+C:\Users\pepat\source\repos\Menu\obj\Debug\Menu.csproj.GenerateResource.cache
+C:\Users\pepat\source\repos\Menu\obj\Debug\Menu.csproj.CoreCompileInputs.cache
+C:\Users\pepat\source\repos\Menu\obj\Debug\Menu.exe
+C:\Users\pepat\source\repos\Menu\obj\Debug\Menu.pdb
