@@ -11,6 +11,10 @@ namespace WinFormsPizza
         public LoginForm()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(44, 62, 80);        
+            //this.ForeColor = Color.WhiteSmoke;                 
+            this.Font = new Font("Segoe UI", 10);              
+
         }
 
         private void loginButton_Click(object sender, EventArgs e)
