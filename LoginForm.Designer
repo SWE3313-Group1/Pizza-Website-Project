@@ -1,174 +1,105 @@
 namespace WinFormsPizza
 {
-    partial class MenuForm
+    partial class LoginForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+       private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
 
-        #region Windows Form Designer generated code
+       private TextBox phoneNumberTextBox;
+       private TextBox passwordTextBox;
+       private Button loginButton;
+       private Button createAccountButton;
+       private Label phoneNumberLabel;
+       private Label passwordLabel;
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+
         private void InitializeComponent()
         {
-            menuLabel = new Label();
-            menuListBox = new ListBox();
-            addToCartButton = new Button();
-            viewToCartButton = new Button();
-            logoutButton = new Button();
-            viewHistoryButton = new Button();
-            drinkSizeComboBox = new ComboBox();
-            selectDrinkSizeLabel = new Label();
-            picturePanel = new Panel();
-            pictureBox1 = new PictureBox();
-            picturePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            phoneNumberLabel = new Label();
+            phoneNumberTextBox = new TextBox();
+            passwordLabel = new Label();
+            passwordTextBox = new TextBox();
+            loginButton = new Button();
+            createAccountButton = new Button();
             SuspendLayout();
             // 
-            // menuLabel
+            // phoneNumberLabel
             // 
-            menuLabel.Location = new Point(40, 30);
-            menuLabel.Name = "menuLabel";
-            menuLabel.Size = new Size(300, 300);
-            menuLabel.TabIndex = 0;
-            menuLabel.Text = "Select Your Order:";
+            phoneNumberLabel.AutoSize = true;
+            phoneNumberLabel.Location = new Point(65, 64);
+            phoneNumberLabel.Margin = new Padding(5, 0, 5, 0);
+            phoneNumberLabel.Name = "phoneNumberLabel";
+            phoneNumberLabel.Size = new Size(177, 32);
+            phoneNumberLabel.TabIndex = 0;
+            phoneNumberLabel.Text = "Phone Number";
             // 
-            // menuListBox
+            // phoneNumberTextBox
             // 
-            menuListBox.FormattingEnabled = true;
-            menuListBox.Location = new Point(40, 70);
-            menuListBox.Name = "menuListBox";
-            menuListBox.Size = new Size(300, 284);
-            menuListBox.TabIndex = 1;
+            phoneNumberTextBox.Location = new Point(260, 59);
+            phoneNumberTextBox.Margin = new Padding(5, 5, 5, 5);
+            phoneNumberTextBox.Name = "phoneNumberTextBox";
+            phoneNumberTextBox.Size = new Size(274, 39);
+            phoneNumberTextBox.TabIndex = 1;
             // 
-            // addToCartButton
+            // passwordLabel
             // 
-            addToCartButton.Location = new Point(360, 100);
-            addToCartButton.Name = "addToCartButton";
-            addToCartButton.Size = new Size(226, 46);
-            addToCartButton.TabIndex = 2;
-            addToCartButton.Text = "Add to Cart";
-            addToCartButton.UseVisualStyleBackColor = true;
-            addToCartButton.Click += addToCartButton_Click;
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new Point(65, 144);
+            passwordLabel.Margin = new Padding(5, 0, 5, 0);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new Size(111, 32);
+            passwordLabel.TabIndex = 2;
+            passwordLabel.Text = "Password";
             // 
-            // viewToCartButton
+            // passwordTextBox
             // 
-            viewToCartButton.Location = new Point(360, 160);
-            viewToCartButton.Name = "viewToCartButton";
-            viewToCartButton.Size = new Size(184, 50);
-            viewToCartButton.TabIndex = 3;
-            viewToCartButton.Text = "View Cart";
-            viewToCartButton.UseVisualStyleBackColor = true;
-            viewToCartButton.Click += viewCartButton_Click;
+            passwordTextBox.Location = new Point(260, 139);
+            passwordTextBox.Margin = new Padding(5, 5, 5, 5);
+            passwordTextBox.Name = "passwordTextBox";
+            passwordTextBox.PasswordChar = '*';
+            passwordTextBox.Size = new Size(274, 39);
+            passwordTextBox.TabIndex = 3;
             // 
-            // logoutButton
+            // loginButton
             // 
-            logoutButton.Location = new Point(360, 220);
-            logoutButton.Name = "logoutButton";
-            logoutButton.Size = new Size(150, 66);
-            logoutButton.TabIndex = 4;
-            logoutButton.Text = "Log Out";
-            logoutButton.UseVisualStyleBackColor = true;
-            logoutButton.Click += logoutButton_Click;
+            loginButton.Location = new Point(114, 240);
+            loginButton.Margin = new Padding(5, 5, 5, 5);
+            loginButton.Name = "loginButton";
+            loginButton.Size = new Size(162, 48);
+            loginButton.TabIndex = 4;
+            loginButton.Text = "Login";
+            loginButton.UseVisualStyleBackColor = true;
+            loginButton.Click += loginButton_Click;
             // 
-            // viewHistoryButton
+            // createAccountButton
             // 
-            viewHistoryButton.AutoSize = true;
-            viewHistoryButton.Location = new Point(629, 100);
-            viewHistoryButton.Name = "viewHistoryButton";
-            viewHistoryButton.Size = new Size(279, 51);
-            viewHistoryButton.TabIndex = 5;
-            viewHistoryButton.Text = "View Order History";
-            viewHistoryButton.UseVisualStyleBackColor = true;
-            viewHistoryButton.Click += viewHistoryButton_Click;
+            createAccountButton.Location = new Point(325, 240);
+            createAccountButton.Margin = new Padding(5, 5, 5, 5);
+            createAccountButton.Name = "createAccountButton";
+            createAccountButton.Size = new Size(211, 48);
+            createAccountButton.TabIndex = 5;
+            createAccountButton.Text = "Create Account";
+            createAccountButton.UseVisualStyleBackColor = true;
+            createAccountButton.Click += createAccountButton_Click;
             // 
-            // drinkSizeComboBox
+            // LoginForm
             // 
-            drinkSizeComboBox.Items.AddRange(new object[] { "Small", "Medium\t", "Large" });
-            drinkSizeComboBox.Location = new Point(333, 411);
-            drinkSizeComboBox.Name = "drinkSizeComboBox";
-            drinkSizeComboBox.Size = new Size(177, 48);
-            drinkSizeComboBox.TabIndex = 8;
-            // 
-            // selectDrinkSizeLabel
-            // 
-            selectDrinkSizeLabel.AutoSize = true;
-            selectDrinkSizeLabel.Location = new Point(40, 411);
-            selectDrinkSizeLabel.Name = "selectDrinkSizeLabel";
-            selectDrinkSizeLabel.Size = new Size(236, 41);
-            selectDrinkSizeLabel.TabIndex = 7;
-            selectDrinkSizeLabel.Text = "Select Drink Size";
-            // 
-            // picturePanel
-            // 
-            picturePanel.Controls.Add(pictureBox1);
-            picturePanel.Location = new Point(1056, 66);
-            picturePanel.Name = "picturePanel";
-            picturePanel.Size = new Size(668, 542);
-            picturePanel.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(14, 20);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(300, 200);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // MenuForm
-            // 
-            AutoScaleDimensions = new SizeF(16F, 40F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1761, 661);
-            Controls.Add(picturePanel);
-            Controls.Add(selectDrinkSizeLabel);
-            Controls.Add(drinkSizeComboBox);
-            Controls.Add(viewHistoryButton);
-            Controls.Add(logoutButton);
-            Controls.Add(viewToCartButton);
-            Controls.Add(addToCartButton);
-            Controls.Add(menuListBox);
-            Controls.Add(menuLabel);
-            Font = new Font("Segoe UI", 11F);
-            Margin = new Padding(4);
-            Name = "MenuForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Pizza Menu";
-            picturePanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ClientSize = new Size(2096, 791);
+            Controls.Add(phoneNumberLabel);
+            Controls.Add(phoneNumberTextBox);
+            Controls.Add(passwordLabel);
+            Controls.Add(passwordTextBox);
+            Controls.Add(loginButton);
+            Controls.Add(createAccountButton);
+            Margin = new Padding(5, 5, 5, 5);
+            Name = "LoginForm";
+            Text = "Customer Login";
             ResumeLayout(false);
             PerformLayout();
         }
 
-        #endregion
-
-        private Label menuLabel;
-        private ListBox menuListBox;
-        private Button addToCartButton;
-        private Button viewToCartButton;
-        private Button logoutButton;
-        private Button viewHistoryButton;
-        private ComboBox drinkSizeComboBox;
-        private Label selectDrinkSizeLabel;
-        private Panel picturePanel;
-        private PictureBox pictureBox1;
     }
 }
+
